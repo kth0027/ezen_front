@@ -98,10 +98,18 @@
 				<source src="동영상파일.mp4">
 			</video>
 	
-		6. 목록 태그 :  <ul> <ol> <li> 
+		6. 목록 태그 :  <ul> <ol> <li> // css초기화 : ol, ul {list-style: none;}
+			
 	
 		7. 하이퍼링크 태그 : <a href=“링크경로”> 링크 대상 </a
-			<a href="1.HTML시작_h1태그.html"> 링크 대상 </a>
+			<a href="1.HTML시작_h1태그.html"> 링크 대상 </a> // css초기화 : a {text-decoration: none;}
+			
+			// * 
+			초기화 reset
+			* { margin: 0;
+				padding: 0;
+    			border: 0; }
+			*//
 			
 			
 		
