@@ -1,5 +1,15 @@
 웹 개발 
 
+// port 중복 제거
+
+0. cmd 진입
+
+1. netstat -a -o 를 입력해서 현재 사용하고 있는 포트를 확인한다
+
+2. port 확인
+
+3. taskkill /f /pid 0000 ← pid 번호를 입력하면 된다.
+
 	1.	Server[ tomcat ]
 	2.	HTML
 	3.	CSS	
