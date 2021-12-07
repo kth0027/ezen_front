@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 가져오기 css -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- 아이콘 사용 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            height: auto;
+        }
+
+        body h3,
+        body h4 {
+            text-align: center;
+        }
+
+        body div {
+            margin: 0.1rem 0rem;
+        }
+
+        .row1 div {
+            border: 1px solid #000;
+        }
+
+        .Verticaalignment .row div {
+            border: 1px solid #000;
+        }
+
+        .Horizontalalignment .row div {
+            border: 1px solid #000;
+        }
+
+        .colorrow p {
+            margin: 0.1rem 0.1rem;
+            border: 1px solid #000;
+        }
+
+        .border span {
+            width: 5rem;
+            height: 5rem;
+            margin: 0 1rem;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!-- 그리드 정의 -->
+    <div class="bootstrap1">
+        <h3 class="text-center"> 그리드 레이아웃</h3>
+        <div class="container text-center border border-dark">
+
+            <div class="row row1 border border-dark">
+                <div class="container   ">container</div>
+                <div class="container-fluid">fluid</div>
+            </div>
+            <hr>
+            <h4>col-1</h4>
+            <div class="row row1 border border-dark">
+
+                <div class="container-sm col-xs-1">container-xs 576px</div>
+                <div class="container-sm col-sm-1">container-sm ≥576px</div>
+                <div class="container-md col-md-1">container-md ≥768px</div>
+                <div class="container-lg col-lg-1">container-lg ≥992px</div>
+                <div class="container-xl col-xl-1">container-xl ≥1200px</div>
+                <div class="container-xxl col-xxl-1">container-xxl ≥1400px</div>
+            </div>
+            <hr>
+            <h4>col-12</h4>
+            <div class="row row1 border border-dark">
+
+                <div class="container-sm col-xs-12">container-xs 576px</div>
+                <div class="container-sm col-sm-12">container-sm ≥576px</div>
+                <div class="container-md col-md-12">container-md ≥768px</div>
+                <div class="container-lg col-lg-12">container-lg ≥992px</div>
+                <div class="container-xl col-xl-12">container-xl ≥1200px</div>
+                <div class="container-xxl col-xxl-12">container-xxl ≥1400px</div>
+            </div>
+            <hr>
+            <div class="row border border-dark">
+                <div class="col-md-6 border border-danger">
+                    col-md-6
+                </div>
+
+                <div class="col-md-6 border border-danger">
+                    col-md-6
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 border border-danger">
+                    col-md-4
+                </div>
+                <div class="col-md-4 border border-danger">
+                    col-md-4
+                </div>
+                <div class="col-md-4 border border-danger">
+                    col-md-4
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 border bg-info offset-4">
+                    col-md-4 / offset-4
+                </div>
+
+                <div class="col-md-4 border border-danger">
+                    col-md-4
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container-fluid text-center">
+            <h3>콘테이너 fluid</h3>
+            <div class="row bg-secondary">
+                <div class="col-6">
+                    <div class="p-3 border border-dark">col-6</div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border border-dark">col-6</div>
+                </div>
+                <div class="col-3">
+                    <div class="p-3 border border-dark">col-3</div>
+                </div>
+                <div class="col-3">
+                    <div class="p-3 border border-dark">col-3</div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border border-dark">col-6</div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <h4>Horizontal alignment</h4>
+        <div class="container Horizontalalignment">
+            <hr>
+            <p class="bg-success">justify-content-start</p>
+            <div class="row justify-content-start border border-dark">
+                <div class="col-4">
+                    One of two columns
+                </div>
+                <div class="col-4">
+                    One of two columns
+                </div>
+            </div>
+            <hr>
+            <p class="bg-success">justify-content-center</p>
+            <div class="row justify-content-center border border-dark">
+                <div class="col-4">
+                    One of two columns
+                </div>
+                <div class="col-4">
+                    One of two columns
+                </div>
+            </div>
+            <hr>
+            <p class="bg-success">justify-content-end</p>
+            <div class="row justify-content-end border border-dark">
+                <div class="col-4">
+                    One of two columns
+                </div>
+                <div class="col-4">
+                    One of two columns
+                </div>
+            </div>
+
+            <hr>
+            <p class="bg-success">justify-content-around</p>
+            <div class="row justify-content-around border border-dark">
+                <div class="col-4">
+                    One of two columns
+                </div>
+                <div class="col-4">
+                    One of two columns
+                </div>
+            </div>
+            <hr>
+            <p class="bg-success">justify-content-between</p>
+            <div class="row justify-content-between border border-dark">
+                <div class="col-4">
+                    One of two columns
+
+                </div>
+                <div class="col-4">
+                    One of two columns
+                </div>
+            </div>
+            <hr>
+            <p class="bg-success">justify-content-evenly</p>
+            <div class="row justify-content-evenly border border-dark">
+                <div class="col-4">
+                    One of two columns
+                </div>
+                <div class="col-4">
+                    One of two columns
+                </div>
+            </div>
+
+            <hr>
+
+
+
+
+
+        </div>
+
+
+
+        <hr>
+
+        <h4>Vertical alignment</h4>
+        <div class="container Verticaalignment">
+            <h6>align-items : justify-content와 반대로 교차 축의 정렬 방법 설정</h6>
+            <div class="row border border-dark" style="height: 7rem">
+                <div class="d-flex align-items-start">
+                    <div class="">
+                        align-items-start
+                    </div>
+                    <div class="">
+                        align-items-start
+                    </div>
+                </div>
+                <div class="d-flex align-items-end">
+                    <div class="">
+                        align-items-end
+                    </div>
+                    <div class="">
+                        align-items-end
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="">
+                        align-items-center
+                    </div>
+                    <div class="">
+                        align-items-center
+                    </div>
+                </div>
+                <div class="d-flex align-items-baseline">
+                    <div class="">
+                        align-items-baseline
+                    </div>
+                    <div class="">
+                        align-items-baseline
+                    </div>
+                </div>
+                <div class="d-flex align-items-stretch">
+                    <div class="">
+                        align-items-stretch
+                    </div>
+                    <div class="">
+                        align-items-stretch
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <h6>align-content : Flex Container의 flex Item들이 wrap & 두줄 이상으로 배치되어있을 경우에 각 줄을 어떻게 배치할 것인지 설정. flex
+                    item이 한줄로 배치되어 있을 경우 동작 안함.</h6>
+                <div class="d-flex align-content-start flex-wrap m-3" style="height: 5rem;">
+                    <div>align-content-start</div>
+                    <div>align-content-start</div>
+                    <div>align-content-start</div>
+                    <div>align-content-start</div>
+                    <div>align-content-start</div>
+                    <div>align-content-start</div>
+                    <div>align-content-start</div>
+                    <div>align-content-start</div>
+                    <div>align-content-start</div>
+                    <div>align-content-start</div>
+                    <div>align-content-start</div>
+                    <div>align-content-start</div>
+                </div>
+
+                <div class="d-flex align-content-center flex-wrap m-3" style="height: 5rem;">
+                    <div>align-content-center</div>
+                    <div>align-content-center</div>
+                    <div>align-content-center</div>
+                    <div>align-content-center</div>
+                    <div>align-content-center</div>
+                    <div>align-content-center</div>
+                    <div>align-content-center</div>
+                    <div>align-content-center</div>
+                    <div>align-content-center</div>
+                    <div>align-content-center</div>
+                    <div>align-content-center</div>
+                    <div>align-content-center</div>
+                </div>
+
+                <div class="d-flex align-content-end flex-wrap m-3" style="height: 5rem;">
+                    <div>align-content-end</div>
+                    <div>align-content-end</div>
+                    <div>align-content-end</div>
+                    <div>align-content-end</div>
+                    <div>align-content-end</div>
+                    <div>align-content-end</div>
+                    <div>align-content-end</div>
+                    <div>align-content-end</div>
+                    <div>align-content-end</div>
+
+                </div>
+
+                <div class="d-flex align-content-around flex-wrap m-3" style="height: 5rem;">
+                    <div>align-content-around</div>
+                    <div>align-content-around</div>
+                    <div>align-content-around</div>
+                    <div>align-content-around</div>
+                    <div>align-content-around</div>
+                    <div>align-content-around</div>
+                    <div>align-content-around</div>
+                    <div>align-content-around</div>
+                    <div>align-content-around</div>
+                    <div>align-content-around</div>
+                    <div>align-content-around</div>
+                    <div>align-content-around</div>
+                </div>
+
+                <div class="d-flex align-content-between flex-wrap m-3" style="height: 5rem;">
+                    <div>align-content-between</div>
+                    <div>align-content-between</div>
+                    <div>align-content-between</div>
+                    <div>align-content-between</div>
+                    <div>align-content-between</div>
+                    <div>align-content-between</div>
+                    <div>align-content-between</div>
+                    <div>align-content-between</div>
+                    <div>align-content-between</div>
+                    <div>align-content-between</div>
+                    <div>align-content-between</div>
+                    <div>align-content-between</div>
+                </div>
+
+                <div class="d-flex align-content-stretch flex-wrap m-3 style=" height: 5rem;">
+                    <div>align-content-stretch</div>
+                    <div>align-content-stretch</div>
+                    <div>align-content-stretch</div>
+                    <div>align-content-stretch</div>
+                    <div>align-content-stretch</div>
+                    <div>align-content-stretch</div>
+                    <div>align-content-stretch</div>
+                    <div>align-content-stretch</div>
+                    <div>align-content-stretch</div>
+                    <div>align-content-stretch</div>
+                    <div>align-content-stretch</div>
+                    <div>align-content-stretch</div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container Verticaalignment">
+            <h6>교차 축(cross-axis)에서 개별 Item의 정렬 방법을 설정합니다. <br>align-items는 Container 내 모든 Items의 정렬 방법을 설정합니다.
+                필요에 의해 일부 Item만 정렬 방법을 변경하려고 할 경우 align-self를 사용할 수 있습니다.
+                이 속성은 align-items 속성보다 우선합니다.</h6>
+            <div class="row border border-dark" style="height: 7rem;">
+                <div class="col-4 align-self-start">
+                    One of three columns <br>
+                    align-self-start
+                </div>
+                <div class="col-4 align-self-center">
+                    One of three columns <br>
+                    align-self-center
+                </div>
+                <div class="col-4 align-self-end">
+                    One of three columns <br>
+                    align-self-end
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h4>Color</h4>
+        <div class="container">
+            <div class="row colorrow border border-dark">
+                <p class="text-primary">.text-primary</p>
+                <p class="text-secondary">.text-secondary</p>
+                <p class="text-success">.text-success</p>
+                <p class="text-danger">.text-danger</p>
+                <p class="text-warning bg-dark">.text-warning</p>
+                <p class="text-info bg-dark">.text-info</p>
+                <p class="text-light bg-dark">.text-light</p>
+                <p class="text-dark">.text-dark</p>
+                <p class="text-body">.text-body</p>
+                <p class="text-muted">.text-muted</p>
+                <p class="text-white bg-dark">.text-white</p>
+                <p class="text-black-50">.text-black-50</p>
+                <p class="text-white-50 bg-dark">.text-white-50</p>
+            </div>
+
+            <hr>
+
+            <div class="row border border-dark">
+                <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+                <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+                <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+                <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+                <div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
+                <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+                <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h4>border</h4>
+        <div class="container">
+            <div class="row">
+                <div class="row border justify-content-center border border-dark">
+                    <span class="border border-primary">border-primary</span>
+                    <span class="border border-secondary">border-secondary</span>
+                    <span class="border border-success">border-success</span>
+                    <span class="border border-danger">border-danger</span>
+                    <span class="border border-warning">border-warning</span>
+                    <span class="border border-info">border-info</span>
+                    <span class="border border-light">border-light</span>
+                    <span class="border border-dark">border-dark</span>
+                    <span class="border border-white">border-white</span>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- js쿼리 및 부트스트랩 스크립트 -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
